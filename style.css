@@ -1,0 +1,181 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f2f5;
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin: 16px 0 6px;
+    color: #34495e;
+    font-weight: 500;
+  }
+  
+  select, input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ced4da;
+    font-size: 15px;
+    transition: 0.3s;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  select:focus, input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.15);
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .output {
+    margin-top: 25px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    color: #2d3436;
+    line-height: 1.6;
+    font-size: 15px;
+  }
+  
+  .error {
+    color: #e74c3c;
+    font-weight: 600;
+  }
+  
+  .note {
+    font-size: 13px;
+    color: #e74c3c;
+    font-style: italic;
+  }
+  
+  .green {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin: 10px 0;
+  }
+  
+  /* Toilet renovation specific styles */
+  .toggle-container {
+    margin-top: 15px;
+  }
+  
+  .toggle-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+  }
+  
+  .toggle-item.active {
+    background: #e6f2ff;
+    border-color: #007bff;
+  }
+  
+  .toggle-label {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 24px;
+  }
+  
+  .toggle-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .toggle-slider {
+    background-color: #007bff;
+  }
+  
+  input:checked + .toggle-slider:before {
+    transform: translateX(26px);
+  }
